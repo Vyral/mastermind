@@ -1,8 +1,11 @@
+<style>
+video{
+  width: 100%;
+  height: auto;
+}
+</style>
 <header id="hero">
-<div class="hero-img" style="background-image: url({{site.data.settings.images.hero_image_path}}); background-color: {{site.data.settings.images.hero_background_hex}}">
-        <!-- logo -->
-        <a href="/"><img src="{{site.data.settings.images.hero_logo_path}}" alt="{{site.data.settings.client.company}}" class="site-logo" /></a>
-        <!-- title -->
-        <a href="/"><h1 class="site-title">{{site.data.settings.images.hero_text | replace: '-- MARKET --', site.data.settings.client.market}}</h1></a>
-			</div>
+  <video autoplay="autoplay" muted controls="controls" id="bgvideo">
+    <source src="/uploads/hero.mp4" type="video/mp4">
+  </video>
 </header>
